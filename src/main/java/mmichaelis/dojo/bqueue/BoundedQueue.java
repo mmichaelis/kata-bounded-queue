@@ -5,21 +5,21 @@ package mmichaelis.dojo.bqueue;
  * @since 2013-07-24
  */
 public interface BoundedQueue<T> {
-    void Enqueue(T element);
+  void Enqueue(T element);
 
-    T Dequeue();
+  T Dequeue();
 
-    /**
-     * Number of elements in queue.
-     *
-     * @return elements in queue
-     */
-    int Count();
+  /**
+   * Number of elements in queue.
+   *
+   * @return elements in queue
+   */
+  int Count();
 
-    /**
-     * Maximum number of elements in queue.
-     *
-     * @return maximum number of elements
-     */
-    int Size();
+  /**
+   * Maximum number of elements in queue.
+   *
+   * @return maximum number of elements
+   */
+  int Size();
 }

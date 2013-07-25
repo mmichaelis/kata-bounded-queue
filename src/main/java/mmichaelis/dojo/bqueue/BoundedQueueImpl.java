@@ -5,22 +5,28 @@ package mmichaelis.dojo.bqueue;
  * @since 2013-07-24
  */
 public class BoundedQueueImpl<T> implements BoundedQueue<T> {
-    @Override
-    public void Enqueue(T element) {
-    }
+  private final int size;
 
-    @Override
-    public T Dequeue() {
-        return null;
-    }
+  public BoundedQueueImpl(int size) {
+    this.size = size;
+  }
 
-    @Override
-    public int Count() {
-        return 0;
-    }
+  @Override
+  public void Enqueue(T element) {
+  }
 
-    @Override
-    public int Size() {
-        return 0;
-    }
+  @Override
+  public T Dequeue() {
+    return null;
+  }
+
+  @Override
+  public int Count() {
+    return 0;
+  }
+
+  @Override
+  public int Size() {
+    return size;
+  }
 }
